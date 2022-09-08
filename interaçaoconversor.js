@@ -1,25 +1,25 @@
 function ConverterDolar(){
     var valorElemento = document.getElementById("valor");
     var valor = valorElemento.value; 
-    var valorEmDolarNumerico = Number(valor);
+    var valorEmRealNumerico = Number(valor);
 
-    var valorEmReal = valorEmDolarNumerico * 0.19;
+    var valorEmDolar = valorEmRealNumerico * 0.19;
 
     var elementoValorConvertido = document.getElementById("valorConvertido")
 
-    var valorConvertido = ` O resuldado em Dolar U$ é  ${valorEmReal}`
+    var valorConvertido = ` O resuldado em Dolar U$ é  ${valorEmDolar}`
     elementoValorConvertido.innerHTML = valorConvertido;
 }
 
 function ConverterBTC(){
     var valorElemento = document.getElementById("valor");
     var valor = valorElemento.value; 
-    var valorEmBtcNumerico = Number(valor);
+    var valorEmRealNumerico = Number(valor);
 
-    var valorEmReal = valorEmBtcNumerico * 0.000010;
+    var valorEmBtc = valorEmRealNumerico * 0.000010;
 
     var elementoValorConvertido = document.getElementById("valorConvertido")
 
-    var valorConvertido = ` O resuldado em Bitcoin é ₿ ${valorEmReal}`
+    var valorConvertido = ` O resuldado em Bitcoin é ₿ ${valorEmBtc}`
     elementoValorConvertido.innerHTML = valorConvertido;
 }
